@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>JS Part 6 Ex 1</title>
+    </head>
+    <body>
+        <script>
+        for (var years = 2020; years <= 2030; years++) {
+            if (((years % 4 == 0) && (years % 100 != 0)) || (years % 400 == 0)) {
+                document.write('<p style="color:red">' + years + '</p>');
+            }else {
+                document.write('<p>' + years + '</p>');
+            }
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Exo1P6</title>
+  </head>
+
+  <body>
+    <script>
+      for (let i = 0; i <= 100; i++) {
+        if (i % 15 == 0 && i % 100 != 0) {
+          var p = document.createElement("P"); 
+          // crée un élement paragraphe pour le html
+
+          p.innerHTML = i; 
+          //paragraphe dans html qui affiche la valeur de i "ici des nombres"
+
+          p.style.color = "red"; 
+          //en fonction de l'instruction "ici en rouge si multiple de 15"
+
+          document.body.appendChild(p); 
+          // ajoute l'élement P crée ci dessus dans le html
+        } else {
+          var p = document.createElement("P");
+
+          p.innerHTML = i;
+
+          document.body.appendChild(p);
+        }
+      }
+    </script>
+  </body>
+</html>

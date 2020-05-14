@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exo5p6</title>
+  </head>
+  <body>
+    <script>
+      var firstnumber = 7;
+      var secondnumber = 9;
+
+      while (firstnumber * secondnumber <=250) {
+        // while[tant que]()
+        var p = document.createElement("P");
+        p.innerHTML = firstnumber * secondnumber;
+        document.body.appendChild(p);
+        secondnumber = firstnumber * secondnumber;
+        //le resultat de la multplication devient la nouvelle valeur de secondnumber et donc à la prochaine boucle ça devient 63*7=441
+      }
+    </script>
+  </body>
+</html>
